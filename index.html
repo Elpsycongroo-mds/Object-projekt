@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel szobafoglalás</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>KisSzállás</h1>
+
+  <h2 id="cim">Új foglalás</h2>
+  <div class="urlap">
+    <input type="text" id="nev" placeholder="Vendég neve">
+    <select id="szoba">
+      <option value="101">101 - Egyágyas</option>
+      <option value="102">102 - Egyágyas</option>
+      <option value="201">201 - Kétágyas</option>
+      <option value="202">202 - Kétágyas</option>
+      <option value="301">301 - Családi</option>
+    </select>
+    <input type="date" id="erkezes">
+    <input type="date" id="tavozas">
+    <button id="mentes" onclick="mentes()">Mentés</button>
+  </div>
+
+  <h2>Foglalások</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Név</th>
+        <th>Szoba</th>
+        <th>Érkezés</th>
+        <th>Távozás</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="lista"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
