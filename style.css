@@ -44,15 +44,18 @@ table {
 }
 
 th, td {
-  border: 1px solid #ccc;
+  border: 1px solid gainsboro;
   padding: 8px;
   text-align: left;
 }
 
 th {
-  background: #e6eef2;
+  background: rgb(224, 216, 216);
 }
 
 .torles {
-  background: #c0392b;
+  background: red;
+}
+table{
+  background-color: rgb(224, 216, 216);
 }
